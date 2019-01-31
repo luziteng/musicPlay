@@ -1,0 +1,764 @@
+
+html,body{
+    width:100%;
+    height:100%;
+    margin:0;
+    padding:0;
+
+}
+#box{
+     background:url("../images/background.png");
+}
+#top{
+    width: 100%;
+    box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.1),0 1px rgba(0,0,0,0.1);
+    background: #fafafa;
+    position:fixed;
+    z-index:99;
+    height:80px;
+}
+#top .container .logo{float:left;
+    height: 80px;
+   
+}
+#top .container  span{
+    
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 80px;
+    padding-left: 6px;
+    float:left;
+
+}
+#top .container .logo img{    display: block;
+    float: left;
+    height: 65px;
+    margin-top: 10px;
+    margin-right:10px;}
+#top .container li{float:left;    }
+#top .container ul li a{display:block;
+    color:#000;
+    padding:0 30px;
+font-size:18px;line-height: 98px;text-align:center;}
+
+.banner {height: 245px;width:100%;position:relative;overflow:hidden; }
+.banner img{display:block;width:1920px;height: 245px;}
+.banner ul{position:absolute;overflow:hidden;}
+.banner ul li{float:left;margin-top: 90px;}
+
+.banner {height: 280px;width:1000px;position:relative;overflow:hidden;margin:0 auto;}
+.banner img{display:block;width:1000px;height: 280px;}
+.banner ul{position:absolute;overflow:hidden;}
+.banner ul li{float:left;}
+.banner .page{position:absolute;right:50%;bottom:0;padding:10px;}
+.banner .page span{display:inline-block;margin:0 5px;width:30px;height:30px;line-height:30px;background-color:rgba(0,0,0,.6);text-align:center;color:#fff;border-radius: 50%;box-shadow:0 0 10px rgba(0,0,0,.5);}
+.banner .page span.active{background-color: rgba(255,0,0,.8);}
+
+/* #business{height: 755px;background:#444;} */
+
+#box .togeter h1{padding-top:40px;
+    font-size:46px;
+text-align:center;
+color:rgba(0, 0, 255, 0.8);}
+#box .togeter p{
+    font-size:18px;
+    line-height:24px;
+    padding-top:20px;
+    text-align:center;
+    padding-bottom:50px;
+}
+
+#hotVideo{margin-top:40px;}
+#hotVideo .choiceness{
+    overflow: hidden;
+    width: 650px;
+    float:left;
+}
+#hotVideo .choiceness .itemTitle {
+    height: 30px;
+    padding-bottom: 30px;
+}
+#hotVideo .choiceness .itemTitle h3 {
+    display: block;
+    width: 120px;
+    height: 30px;
+    margin-right: 25px;
+    color: #555;
+    font-size: 26px;
+}
+
+
+#hotVideo .choiceness .itemTitle h3 b {
+    font-weight: 400;
+    color: #009af3;
+}
+
+#hotVideo .choiceness #choicenes {
+    width: 660px;
+}
+
+#hotVideo .choiceness #choicenes .cptBig {
+    width: 325px;
+    height: 325px;
+    margin-right: 5px;
+    float: left;
+    position: relative;
+}
+
+#hotVideo .choiceness #choicenes .cpt .cptT {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 152px;
+    padding-right: 8px;
+    height: 30px;
+
+    line-height: 30px;
+    background: url(../images/cptTBg.png) no-repeat right center;
+    color: #fff;
+    text-align: right;
+    z-index: 2;
+ 
+}
+
+#hotVideo .choiceness #choicenes .cpt img {
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#hotVideo .choiceness #choicenes .cptBig .Cover {
+    width: 325px;
+    height: 325px;
+    background: rgba(0,0,0,.3);
+    z-index: 3;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#hotVideo .choiceness #choicenes .cptBig .Cover :hover{
+    visibility:visible;
+ }
+
+#hotVideo .choiceness #choicenes .Cover a {
+    display: block;
+    width: 325px;
+    height: 325px;
+    background: #000;
+    opacity: 0;
+
+}
+
+#hotVideo .choiceness #choicenes .cptBig .Cover .playBtn {
+
+    top: 298px;
+    left: 285px;
+    z-index: 99999999;
+    position: absolute;
+    font-size: 34px;
+    color: #fff;
+}
+
+.cpt .Cover .icon-shipinbofang {
+    margin-left: -18px;
+    margin-top: -18px;
+}
+
+.cpt .Cover .playBtn {
+    position: absolute;
+
+    cursor: pointer;
+
+}
+
+#hotVideo .choiceness #choicenes .iconfont {
+    margin-right: 10px;
+    position: relative;
+    top: 2px;
+}
+
+#hotVideo .choiceness #choicenes .cptBig .cptBg {
+    width: 325px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+}
+
+#hotVideo .choiceness #choicenes .cptBig .cptB {
+    width: 309px;
+    padding: 6px 8px;
+    background: rgba(0,0,0,.5);
+    font-size: 14px;
+    height: 38px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+}
+
+#hotVideo .choiceness #choicenes .cpt .cptB .songListName,#hotVideo .choiceness #choicenes .cpt .cptB .songListSinger,#hotVideo .choiceness #choicenes .listItem .list dd {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #fff;
+    line-height: 19px;
+}
+
+#hotVideo .choiceness #choicenes .cptBig .cptB .songListName,    {
+    width: 295px;
+}
+
+#hotVideo .choiceness #choicenes .cpt .cptB .songListSinger{
+    color: #cfcfcf;
+}
+
+#hotVideo .choiceness .cptMid {
+    width: 160px;
+    height: 160px;
+    padding: 0;
+    margin: 0 5px 5px 0;
+        float: left;
+}
+
+.cpt, .listItem {
+    position: relative;
+}
+
+.cpt .cptT {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 152px;
+    padding-right: 8px;
+    height: 30px;
+    line-height: 30px;
+    background: url(./images/cptTBg.png) no-repeat right center;
+    color: #fff;
+    text-align: right;
+    z-index: 2;
+
+}
+
+.cpt img {
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+
+.cpt .Cover, .cpt img, .listItem a .Cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#hotVideo .choiceness .cptMid .Cover {
+    width: 160px;
+    height: 160px;
+    background: rgba(0,0,0,.3);
+    visibility: hidden;
+    z-index: 3;
+}
+
+.cpt .Cover, .cpt img, .listItem a .Cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#hotVideo .choiceness .cptMid .Cover a {
+    width: 160px;
+    height: 160px;
+}
+
+.cpt .Cover .playBtn {
+    position: absolute;
+    bottom: 8px;
+    right: 10px;
+    z-index: 9999;
+    cursor: pointer;
+    display: none;
+    font-size: 30px;
+    color: #fff;}
+.cptMid .cptB {
+    width: 144px;
+    padding: 6px 8px;
+    background: rgba(0,0,0,.5);
+    font-size: 14px;
+    height: 38px;
+
+}
+
+.cpt .cptB, .cpt .cptBg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.cpt .cptB .songListName, .cpt .cptB .songListSinger, .listItem .list dd {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #fff;
+    line-height: 19px;
+}
+
+.cpt .cptB .songListSinger, .listItem .list dd {
+    color: #cfcfcf;
+}
+
+.cpt .cptB .songListName, .cpt .cptB .songListSinger, .listItem .list dd {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 19px;
+}
+
+
+.HotSongList {
+    width: 320px;
+    overflow: hidden;
+     float: right;
+}
+
+.HotSongList .itemTitle {
+    height: 30px;
+    padding-bottom: 30px;
+}
+
+.HotSongList .itemTitle h3 {
+    display: block;
+    width: 120px;
+    height: 30px;
+    margin-right: 25px;
+    color: #555;
+    font-size: 26px;
+}
+.HotSongList .itemTitle h3 b {
+    font-weight: 400;
+    color: #009af3;
+}
+.HotSongList #song_hot {
+    overflow: hidden;
+    height: 325px;
+}
+#song_hot .listItem {
+    overflow:hidden;
+    margin-bottom: 15px;
+    background-color: #f6f6f6;
+    position: relative;
+}
+
+#song_hot .listItem a .Cover {
+    width: 98px;
+    height: 98px;
+    background: rgba(0,0,0,.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity:0;
+}
+
+#song_hot .listItem a .Cover .playBtn{
+    position:absolute;
+    top:50%;
+    left:50%;
+    color:#fff;
+    font-size:34px;
+    margin-left:-17px;
+    margin-top:-17px;
+}
+#song_hot .listItem a .Cover:hover{
+    opacity:0.5;
+}
+
+
+#song_hot .listItem img {
+    width: 98px;
+    height: 98px;
+        float: left;
+}
+
+#song_hot .listItem .list {
+    overflow: hidden;
+    width: 200px;
+    height: 68px;
+    padding: 15px 10px;
+    font-size: 14px;
+    float: left;
+}
+
+#song_hot .listItem .list dt {
+    line-height: 24px;
+    color: #333;
+    font-weight: 700;
+}
+#song_hot .listItem .list dd {
+    width: 180px;
+    line-height: 24px;
+    font-size: 14px;
+    color: #555;
+}
+
+
+/*歌曲列表*/
+#newSong {
+    margin-top:40px;
+}
+#newSong .newSongList {
+    overflow: hidden;
+    width: 650px;
+    height: 375px;
+}
+#newSong .hasBorder {
+    border-bottom: 1px solid #f0f0f0;
+    margin-bottom: 10px;
+    height: 30px;
+}
+
+#newSong .itemTitle{
+    padding-bottom: 20px;
+}
+
+#newSong .itemTitle h3 {
+    display: block;
+    width: 130px;
+    height: 30px;
+    margin-right: 25px;
+    color: #555;
+    font-size: 26px;
+    float:left;
+}
+
+#newSong .itemTitle h3 b {
+    font-weight: 400;
+    color: #009af3;
+}
+
+#newSong .itemTitle .tabT {
+    line-height: 30px;
+        float: left;
+}
+#newSong .itemTitle .tabT span {
+    margin-right: 20px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#newSong .newSongList .itemContents {
+    position: relative;
+    height: 280px;
+    overflow: hidden;
+}
+
+#newSong #songList li{
+    height: 30px;
+    line-height: 30px;
+}
+#newSong #songList li a{
+    display:block;
+    position: relative;
+    overflow: hidden;
+    padding: 0 10px;
+    color: #333;
+}
+#newSong #songList li a:hover{
+      color: #009af3;
+}
+#newSong #songList li a div{
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
+
+#newSong #songList li a div i{
+    position: absolute;
+    top: 0;
+    right: 46px;
+    display:none;
+}
+#newSong #songList li a:hover i{
+    display:block;
+}
+
+#newSong .albumList {
+    overflow: hidden;
+    width: 320px;
+}
+
+#newSong .albumList .itemTitle {
+        height: 30px;
+    padding-bottom: 20px;   
+}
+
+.albumList .itemContent {
+    width: 332px;
+}
+
+.albumList .cptBigL {
+    width: 320px;
+    height: 175px;
+    margin-bottom: 12px;
+    float: left;
+    position: relative;
+}
+
+.albumList .cptBigL .cptB {
+    width: 304px;
+}
+
+.cpt .cptB {
+    padding: 6px 8px;
+    background: rgba(0,0,0,.5);
+    font-size: 14px;
+    height: 38px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+}
+.cpt .cptB .songListName {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #fff;
+    line-height: 19px;
+}
+.cpt .cptB .songListSinger {
+    color: #cfcfcf;
+}
+
+.cpt .Cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    background:#333;
+    opacity:0;
+    position:relative;
+}
+.cpt .Cover .playBtn{
+    display:block;
+    font-size:34px;
+    color:#fff;
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-top: -17px;
+    margin-left:-17px;
+    z-index: 1;
+}
+.cpt .Cover:hover {
+   opacity:0.5;
+}
+
+.albumList .cptMidL {
+    width: 154px;
+    height: 125px;
+    margin-right: 12px;
+    float:left;
+    position: relative;
+}
+.albumList .cptMidL a {
+    display: block;
+    width: 154px;
+    height: 125px;
+}
+.albumList .cptMidL img {
+    height: 84px;
+}
+.albumList .cptMidL .cptB {
+    padding: 5px 0 0;
+    background: 0 0;
+}
+.cpt .cptB {
+    width: 144px;
+    font-size: 14px;
+    height: 38px;
+}
+
+
+
+.albumList .cptMidL .cptB .songListName {
+    width: 154px;
+    color: #444;
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.albumList .cptMidL .cptB .songListSinger {
+    color: #888;
+    font-size: 12px;
+}
+
+.albumList .cptMidL .Cover {
+    height:84px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+    background:#333;
+    opacity:0;
+    position:relative;
+}
+.albumList .cptMidL .Cover:hover{
+    opacity:0.6;
+}
+/*喜欢的歌曲列表*/
+#likeVideo{
+        padding:30px 0;
+}
+
+#likeVideo .itemTitle {
+
+    height: 30px;
+    padding-bottom: 30px;
+
+}
+
+#likeVideo .itemTitle h3 {
+    display: block;
+    width: 120px;
+    height: 30px;
+    margin-right: 25px;
+    color: #555;
+    font-size: 26px;
+}
+
+#likeVideo .itemTitle h3 b {
+    font-weight: 400;
+    color: #009af3;
+}
+
+.h1 {
+    height: 190px;
+    overflow: hidden;
+    position: relative;
+}
+.col3 {
+    margin-right: -20px;
+}
+.cfix {
+    zoom: 1;
+}
+.h1 li {
+    height: 190px;
+    padding-bottom: 0;
+}
+.col3 li {
+    display: inline;
+    float: left;
+    padding-bottom: 17px;
+    margin-right: 13px;
+    width: 190px;
+    overflow: hidden;
+}
+.r-pic {
+    height: 120px;
+    margin-bottom: 8px;
+    overflow: hidden;
+    position: relative;
+    width: 190px;
+}
+a {
+    color: #333;
+}
+
+.lisBg {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    height: 20px;
+    left: 0;
+    width: 100%;
+    background: #000;
+    opacity: .3;
+    z-index: 1;
+}
+
+.r-pic .bcount56{
+    position: absolute;
+    bottom: 0;
+    right: 9px;
+    display: block;
+
+    font-size: 12px;
+    height: 20px;
+    line-height: 20px;
+    margin-top: 10px;
+    padding-left: 18px;
+    z-index: 10;
+    color: #fff;
+}
+
+.r-neck {
+    height: 32px;
+    margin: -20px 0 12px 6px;
+    position: relative;
+    z-index: 5;
+}
+
+.useravatar {
+
+    width: 32px;
+    height: 32px;
+    padding: 2px;
+    display: block;
+    float: left;
+    overflow: hidden;
+        color: #333;
+}
+.username {
+    bottom: -4px;
+    left: 40px;
+    position: absolute;
+        color: #333;
+}
+.username:hover{
+    color:red;
+}
+
+.useravatar img {
+    height: 32px;
+    width: 32px;
+    z-index: 2;
+}
+
+.col3 h3 {
+    font-size: 14px;
+    height: 21px;
+    word-break: break-all;
+    font-weight: 400;
+}
+.col h3 a:hover{
+    color:red;
+}
+
+
+#footer{height: 158px;background:#2E2E2E;}
+#footer .bottom{
+    padding-top:10px;
+    padding-bottom:20px;
+    color: #ffff;
+    position: relative;
+    padding-top: 20px;
+    z-index: 1;
+    width: 100%;
+    text-align: center;
+}
+
+
+#footer .bottom span{
+    font-size:18px;
+    display:block;
+    padding-bottom: 5px;
+}

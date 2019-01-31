@@ -1,0 +1,97 @@
+    body,html{
+            margin:0;
+            padding:0;
+            height: 100%;
+            width: 100%;
+        }
+        #video{
+            width:100%;
+            height:100%;
+            background:url('../images/background.png') no-repeat;
+            position:relative;
+        }
+        #video .video{
+          position:absolute;
+          top:50%;
+          left:50%;
+          margin-left:-568px;
+          margin-top:-299px;
+
+        }
+        #video .video .logo{
+            overflow:hidden;
+             padding-bottom: 10px;
+        }
+        #video .video .logo img{
+            float:left;
+        }
+        #video .video .logo span{
+            display:block;
+            font-size:24px;
+            font-weight: bold;
+            color:#ffd6d4;
+            margin-top:10px;
+            
+        }
+         #video .video .logo p{
+            display:block;
+            margin-left:10px; 
+            float:left;
+            font-size:18px;
+            color:#aaa;
+            padding-top:10px;
+         }
+        #video .video .list{
+            float:right;
+            height: 504px;
+            width: 182px;
+            background-color:blue;
+            position:relative;
+            overflow:hidden;
+            overflow-y:scroll;
+        }
+        #video .video .list .Vcover{
+            display:block;
+            width: 180px;
+            height: 101px;
+            border:1px solid #ccc;
+        }
+        #video .video .list .Vcover img{
+             position:absolute;
+             width: 180px;
+             height: 101px;
+             z-index: :1;
+
+        }
+        
+       
+         #video .video .list .zzc{
+            position:absolute;
+            top:0;
+            left:0;
+            height:101px;
+            width:180px;
+            background-color:#333;
+            position:relative;
+            z-index: 3;
+            opacity:0;
+
+        }
+          #video .video .list .zzc:hover{
+            opacity:0.5;
+           
+          }
+
+        #video .video .list .zzc i{
+            display:block;
+            font-size:34px;
+            color:#fff;
+            position:absolute;
+            top:50%;
+            left:50%;
+            margin-top: -17px;
+            margin-left:-17px;
+            z-index: 1;
+        }
+
+

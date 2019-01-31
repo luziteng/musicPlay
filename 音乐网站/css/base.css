@@ -1,0 +1,111 @@
+/* 
+* @Author: Marte
+* @Date:   2018-08-11 14:52:45
+* @Last Modified by:   Marte
+* @Last Modified time: 2019-01-22 18:35:10
+*/
+/* 
+* @Author: Marte
+* @Date:   2018-08-07 21:05:39
+* @Last Modified by:   Marte
+* @Last Modified time: 2018-08-10 14:39:33
+*/
+/* 
+* @Author: Marte
+* @Date:   2018-08-07 19:05:52
+* @Last Modified by:   Marte
+* @Last Modified time: 2018-08-07 19:07:15
+*/
+/*
+    base.css 存在的意义：
+    1.清除默认样式
+    2.添加公共样式
+    3.添加页面公共部分的样式
+    
+    页面.css:书写页面剩余部分的样式
+*/
+/*(1)清除默认样式*/
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img,input{ margin:0; padding:0; }
+fieldset, img,input,button { border:0 none; padding:0;margin:0;outline-style:none; }  
+ /*去掉input等聚焦时的蓝色边框*/
+ul,li,ol{ list-style:none; }
+select, input { vertical-align:middle;}
+textarea { resize:none; } /*防止拖动*/
+img {vertical-align:middle; }  
+/*  去掉图片低测默认的3像素空白缝隙，或者用display：block也可以*/
+table { border-collapse:collapse; }
+a {text-decoration:none; }
+h1,h2,h3,h4,h5,h6 {font-weight:normal;font-size:1em;}/*设置h标签的大小，设置跟父亲一样大的字体font-size:100%;*/
+s,i,em{font-style:normal;text-decoration:none;}
+b{font-weight:normal;}
+
+/*2.添加公共样式*/
+body {
+    font:12px "宋体";
+    color:#666;
+}
+
+/*公共类*/
+/*清除浮动*/
+.clearfix:after{
+    content:"";
+    display:block;
+    height:0;
+    clear:both;
+    overflow:hidden;
+    visibility: hidden;
+}
+
+.container {  /*内容、版心 提取 */
+    width: 1000px;
+    margin:0 auto;
+}
+.fl {
+    float:left;
+}
+.fr {
+    float:right;
+}
+.ac {
+    text-align:center;
+}
+.hide {
+    display:none;
+}
+.f12{ font-size: 12px;}
+.f14{ font-size: 14px;}
+.f16{ font-size: 16px;}
+
+@font-face {font-family: "iconfont";
+  src: url('../font/iconfont.eot?t=1548152955291'); /* IE9 */
+  src: url('../font/iconfont.eot?t=1548152955291#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../font/data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAR0AAsAAAAACPQAAAQnAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDMgqEdIQZATYCJAMUCwwABCAFhG0HZxvEBxEVnNnJfhbYbdSF0Ob9mQaTFAlCF4KzS/ujwb4P+dB72ZvMZJtmC4AHMDnJfxCXB/nrejnVd9KZwcr7qNALBnbyiaYkv2R5SDr5s2B4ESolZTsA7OF+3v3sZTtvVC0eCZTq43dwuLi2ZuG8tuW41qZsW4EVbw1oj9/bHvgf6EX5h+nlixNwOhAAIlwQBJKVU1QFAQx6GgFABvTt3Q4hoQerIBAIKkXBWhbGRdiHwM3mbgCw0Pt98hElBYADT6HPVKazu5D25fP2g0o9azyNZeyGswJgmwAKIAgAA8iwQvsAoEE8CBQi/zuGNABECODAvfF58/924ds9PQIh3pBSNP7hARQMHAhAFNByI4RJSzDgjY/FBQq8+cgFBrxdyAUOeLtHeC1yHk0WAZgAOAogZgBjJeePuz8VFBaRvZmZCTUyNHJuTmRtKndKQ8YfVUuqpIa5JzGSVj2vjjjnFKl8W2mSUZ5gkdNu/7lqzYzJnAtE1uDnqIiYyNqvV443uaByY5vV2aaXtZ78Fk3zqhNdkx2nyvza0wPT7SdLA1bsKnKrrZfPLXSulPNttHq86lWV+nW19m2t5k2TSjOLmmq1lPPpYzSaGs3DWu3LarW6WvWsqmbOCtKVO3Pty6WsbVlrslvDSvlVb0jNP3SmKbh7gmf93+VHi789rk310XuUde6Hg2/hwTuNvc+dJfv0c23ySXJP8zl3Ot+381Dm1AkF+/pWupqRkqjRNWXDfCcPiaqpixqWsqNv4X55diizE1EqzpTl5fFpvK0ugxMMT4mRxzObIsU077KmWf+eJxJ5P9y8K+20zkuXbzZ5PgOojrrPnKrsvuF1cFLvRdoycy/j5DR/zqhocNS+rcPEIYULa8bCTZX0zK3J9Ejr5maL8acZbz03D58rYqVIOUpo7+pqF6I2kVLsiqd4Z2cU/3+sWW+wW9gi+h88r7Nll5fmHGUA9OjoZPZN3QXJ2fSvuv43zoeV6rbnraZJf2HKAAC6gebjvaLm/BesABf8CRl730TgiIUI2niGIr2IJ7RyQADwyL+HTg546UXv322BJ8Oore+tlUBICBhwMIAzUAjwQjBMEPBQIgoUEJAKIgKRu1kJSwwDCsIMAQRgOgACMxwEDiY4DRRmuIlgmMfAwwafQQEzUhBRk1juqYQPIXZyEUkwVSi3aJV32jTxxM++JbPsRIyLPNIjxcGGsEjzdOqGHMUhFgwrUzJr1NH3eA3ORl3nMUTfkOK0Zg6LLNNFL5Qq38MELiIJpgrlFq3yTjv1eZL5+Vsyy07EirKc95HiYHvHIs0bIG7krlHZpdxlWJmSWaOOvsdrYKXOiHsMxaMaUpzWHaJhkaFquqk8nV7Z3+MGABH0E/CJQpUadRo4ZOtMJdzJUNtgnfRaOLPNdgUr3IxWzGO2AgAA') format('woff2'),
+  url('../font/iconfont.woff?t=1548152955291') format('woff'),
+  url('../font/iconfont.ttf?t=1548152955291') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('../font/iconfont.svg?t=1548152955291#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-tingdan:before {
+  content: "\e7aa";
+}
+
+.icon-shipinbofangyingpian:before {
+  content: "\e78f";
+}
+
+.icon-shipinbofang:before {
+  content: "\e626";
+}
+
+.icon-shipinbofang1:before {
+  content: "\e6eb";
+}
+

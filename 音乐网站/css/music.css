@@ -1,0 +1,131 @@
+  body,html
+  {
+    margin:0;
+    padding:0;
+    height: 100%;
+    width: 100%;
+}
+#music{
+    width:100%;
+    height:100%;
+    background:url('../images/background.png') no-repeat;
+    position:relative;
+}
+#music .music{
+  position:absolute;
+  top:50%;
+  left:50%;
+  margin-left:-568px;
+  margin-top:-299px;
+
+}
+#music .music .logo{
+    overflow:hidden;
+     padding-bottom: 10px;
+}
+#music .music .logo img{
+    float:left;
+}
+#music .music .logo .title{
+    float:left;
+}
+#music .music .logo span{
+    display:block;
+    font-size:24px;
+    font-weight: bold;
+    color:#ffd6d4;
+    margin-top:10px;
+ /*   float:left;*/
+    
+}
+#music .music .logo p{
+display:block;
+margin-left:10px; 
+float:left;
+font-size:18px;
+color:#aaa;
+}
+
+#music .music .logo .search{
+    width:240px;
+    height:30px;
+    font-size:24px;
+    margin-left:40px;
+    margin-top:25px;
+    float:left;
+  
+}
+#music .music .logo .searchBtn{
+   margin-top:25px;
+  float:left;
+  border:2px solid #ccc;
+  height:36px;
+  width:46px;
+  background-color: #009af3;
+  color:#fff;
+}
+.musicContent{
+  width:1078px;
+  height:504px;
+  background-color:#444242;
+}
+
+.musicTop{
+  height: 424px;
+
+}
+.songImg{
+  width: 260px;
+  height: 260px;
+  margin-left: 50px;
+  float:left;
+  padding-top:40px;
+}
+.songImg img{
+  width: 260px;
+  height: 260px;
+}
+
+.songContent{
+     width: 460px;
+    float: left;
+    margin-left: 50px;
+    padding-top: 40px;
+
+}
+.song_name{
+      display: block;
+    font-size: 36px;
+    color: #fff;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+.song_autor{
+    color: #eee;
+    font-size: 24px;
+    padding-bottom: 10px;
+    display: block;
+}
+.songLyric{
+    height: 280px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.liLyric{
+  list-style:none;
+}
+li{
+color:#f9f9f9;
+font-size:20px;
+line-height:30px;
+list-style:none; 
+}
+.musicSong{
+  width: 200px;
+  height: 80px;
+}
+audio{
+    display: block;
+    width: 560px;
+    margin: 16px auto;
+}
